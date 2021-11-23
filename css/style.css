@@ -9,10 +9,6 @@
 ------------------------*/
 :root {
     --main-color: #1A5165;
-    --color-1: #e91e63;
-    --color-2: #f5ae10;
-    --color-3: #09d69c;
-    --bg-dark: #2b2c2f;
     --main-to-dark-color: var(--main-color);
     --dark-to-main-color: var(--bg-dark);
     --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
@@ -52,7 +48,7 @@ ul{
     color: var(--black-000) !important;
 }
 
-.btn-1 {
+/* .btn-1 {
     background-color: #ffffff;
     padding: 12px 30px;
     border: none;
@@ -63,7 +59,7 @@ ul{
     transition: all 0.5s ease;
     box-shadow: var(--shadow-black-300);
     font-weight: 500;
-}
+} */
 
 .btn-1:focus{
     box-shadow: var(--shadow-black-300);
@@ -88,21 +84,6 @@ ul{
     padding: 80px 0;
 }
 
-.section-title {
-    margin-bottom: 60px;
-}
-
-.section-title h2{
-    font-size: 40px;
-    color: var(--black-900);
-    font-weight: 700;
-    text-transform: capitalize;
-    text-align: center;
-}
-
-.section-title h2 span{
-    color: var(--main-color);
-}
 /*------------------------ 
     navbar
 ------------------------*/
@@ -116,15 +97,11 @@ ul{
 .navbar .container #logo {
     width: 20%;
 }
-.navbar.navbar-shrink {
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    background-color: var(--main-color);
-    padding: 10px 0;
-    color: var(--black-000);
-}
+
 .navbar .nav-item i {
     color: var(--main-color);
 }
+
 .navbar > .container{    
     padding: 0 15px;
 }
@@ -165,16 +142,8 @@ ul{
     min-height: 50vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
-    /* border-radius: 0 0 200px 0; */
     position: relative;
     z-index: 1;
-}
-
-.home-text h1{
-    font-size: 45px;
-    font-weight: 700;
-    color: #ffffff;
-    margin: 0 0 20px;
 }
 
 .home .home-btn{
@@ -186,21 +155,22 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     width: 70%;
 }
 
-.home .home-btn .video-play-btn{
-    margin-left: 30px;
-    font-size: 16px;
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    animation: pulse_01 2s ease infinite;
+section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > div.input-group input {
+    background-color: #1A5165;
+    border-color: white;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 15px;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.home .home-btn .video-play-btn i{
-    line-height: 50px;
-}
-.home .home-btn .video-play-btn:hover{
-    animation: none;
-    box-shadow: var(--shadow-black-300);
+section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > div.input-group > div > button{
+    background-color: white;
+    color: var(--main-color);
+    font-size: 16px;
+    border-radius: 0px 10px 10px 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .home-text p{
@@ -210,7 +180,6 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     margin: 0;
     font-weight: 300;
 }
-
 
 .home-img img{
     position: absolute;    
@@ -232,6 +201,7 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
 .home-text img {
     width: 72%;
 }
+
 .fono-logo {
     position: absolute;
     right: -15px;
@@ -248,9 +218,6 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     text-align: center;
     margin: auto;
     width: 70%;
-}
-.section-padding .info-bg{
-    background-color: #F3F3F3;;
 }
 
 .section-padding .container .frame-info {
@@ -334,26 +301,8 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     border-radius: 50%;
 }
 
-/* .features .features-item::before {
-    height: 20px;
-    width: 20px;
-    background-color: var(--color-1);
-    left: 10px;
-    top: 40%;
-} */
-
-/* .features .features-item::after {
-    height: 30px;
-    width: 30px;
-    background-color: var(--color-2);
-    right: 10px;
-    top: 80%;
-} */
-
 .features .features-item .icon{
-    /* height: 60px; */
     width: 60px;
-    /* margin: 0 auto 30px; */
     text-align: center;
     font-size: 30px;
     color: var(--main-color);
@@ -361,6 +310,7 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     transition: all 0.5s ease;
     z-index: 1;
 }
+
 .features-carousel .features-item .icon img {
     width: auto !important;
 }
@@ -382,33 +332,10 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     position: absolute;
     right: 39px;
     top: 40%;
+    width: 60px;
     z-index: 10000;
 }
 
-/* 
-.features .features-item:hover .icon{
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.features .features-item:hover .icon::before{
-    left: 0;
-    border-radius: 50%;
-    opacity: 1;
-}
-
-.features .features-item .icon i{
-    line-height: 60px;
-    font-size: 16px;
-} */
-
-.features .features-item h3{
-    font-size: 22px;
-    margin: 0 0 20px;
-    color: var(--black-900);
-    font-weight: 500;
-    text-transform: capitalize;
-}
 .componentes, .forma-parte {
     background-color: #F9F9F9;
 }
@@ -458,6 +385,9 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     color: var(--main-color);
 }
 
+.dip-cert .container {
+    position: relative;
+}
 
 .dip-cert .container h1 {
     text-align: center;
@@ -482,6 +412,12 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     bottom: 36px;
 }
 
+.dip-cert .container #customNextBtn2 {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    z-index: 10000;
+}
 
 .forma-parte .container span:nth-child(1) {
     display: inherit;   
@@ -506,9 +442,22 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     top: 6.5rem;
 }
 
-/* body > section.section-padding.forma-parte > div > div > div:nth-child(2) > div > div {
-    margin-top: 12px;
-} */
+section.section-padding.forma-parte > div > div > div:nth-child(2) > div > input {
+    border-color: #1A5165;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 20px;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body > section.section-padding.forma-parte > div > div > div:nth-child(2) > div > div > button {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    border-radius: 0px 10px 10px 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
 
 .footer .container .row {
     margin-bottom: 30px;
@@ -551,7 +500,6 @@ body > footer > div > div:nth-child(3) > strong > div ul li{
 @media(max-width: 991px) {
     .navbar-toggler{
         background-color: var(--main-color);
-        /* box-shadow: var(--shadow-black-300); */
         height: 34px;
         width: 44px;
         padding: 0;
@@ -563,8 +511,10 @@ body > footer > div > div:nth-child(3) > strong > div ul li{
         height: 0.5em !important;
     }
 
+    .dip-cert .container .card-body img,
     .footer .container .footer-image,
     .forma-parte img,
+    .dip-cert .container .dip-cert-visible,
     .fono-logo{
         display: none;
     }
