@@ -405,6 +405,9 @@ ul{
     font-weight: 500;
     text-transform: capitalize;
 }
+.componentes, .forma-parte {
+    background-color: #F9F9F9;
+}
 
 .componentes .titulo {
     color: var(--main-color);
@@ -412,6 +415,7 @@ ul{
     font-weight: bold;
 }
 
+.forma-parte,
 .componentes .sub-container {
     position: relative;
 }
@@ -450,6 +454,84 @@ ul{
     color: var(--main-color);
 }
 
+
+.dip-cert .container h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+    font-weight: bold;
+    align-items: center;
+    line-height: 79.69%;
+    margin-bottom: 4rem;
+}
+
+
+.dip-cert .container .card-body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+}
+
+.dip-cert .container .card-body img {
+    position: absolute;
+    right: 15px;
+    bottom: 36px;
+}
+
+
+.forma-parte .container span:nth-child(1) {
+    display: inherit;   
+    font-weight: 300; 
+}
+
+.forma-parte .container span:nth-child(2) {
+    font-weight: bold;
+}
+
+.forma-parte .container span:nth-child(1),
+.forma-parte .container span:nth-child(2) {
+    display: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: var(--main-color);
+    
+}
+
+.forma-parte img {
+    position: absolute;
+    top: 6.5rem;
+}
+
+.footer .container .row {
+    margin-bottom: 30px;
+}
+
+.footer .container .row h4 {
+    font-weight: bold;
+}
+
+footer > div > div:nth-child(1) > div.col-lg-5 > img:nth-child(1) {
+    position: absolute;
+    top: -5%;
+    width: 57%;
+}
+
+footer > div > div:nth-child(1) > div.col-lg-5 > img:nth-child(2) {
+    left: 57%;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.footer .container hr{
+    border-top: 1px solid white;
+    width: 90%;
+}
+
+body > footer > div > div:nth-child(3) > strong > div ul li{
+          margin-right: 10px;
+          font-size: 30px;
+}
+
 /* RESPONSIVE */
 
 @media(max-width: 991px) {
@@ -462,9 +544,13 @@ ul{
         font-size: 16px;
         color: var(--black-000);
     }
+    
     .navbar-toggler-icon {
         height: 0.5em !important;
     }
+
+    .footer .container .footer-image,
+    .forma-parte img,
     .fono-logo{
         display: none;
     }
