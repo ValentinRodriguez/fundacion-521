@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 <head>
   <title>Fondo de inversiones 512</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
   <!-- owl carousel css --> 
   <link rel="stylesheet" href="css/owl.carousel.min.css"> 
@@ -28,28 +29,27 @@
       <a class="navbar-brand" href="index.html"><img src="./img/logo.png" id="logo" alt="" srcset=""></a>
   
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-        <i class="fas fa-bars"></i>
+      <button id="toggle" class="navbar-toggler" type="button">
+        <span class="fas fa-bars fa-icon"></span>
       </button>
   
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Objetivo</a>
+            <a class="nav-link" href="#Objetivos  ">Objetivo</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Impacto</a>
+            <a class="nav-link" href="#Impacto">Impacto</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Diplomado</a>
+            <a class="nav-link" href="#Diplomado">Diplomado</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="#">Quiero Unirme</a>
+            <a class="nav-link active" href="#QuieroSerParte">Quiero Unirme</a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -83,9 +83,9 @@
           </div>
           <br>
           <div class="input-group  input-group-lg">
-            <input type="text" class="form-control" placeholder="Escribe tu correo electrónico...">
+            <input type="text" class="form-control border-bottom" placeholder="Escribe tu correo electrónico...">
             <div class="input-group-append">
-              <button type="button" class="btn btn-outline-secondary">Quiero ser parte</button>
+              <button type="button" class="btn border-bottom btn-outline-secondary">Quiero ser parte</button>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
   </section>
 
   <!-- Objectives section start-->
-  <section class="section-padding ">
+  <section class="section-padding" id="Objetivos">
     <div class="container">
       <h2 class="title-objetivos"><strong>Objetivos</strong></h2>        
       <div class="row justify-content-center">
@@ -154,7 +154,7 @@
   <!--  Objectives section end-->
 
   <!-- impact section start-->
-  <section class="features section-padding impact-bg">
+  <section class="features section-padding impact-bg" id="Impacto">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 text-impact">
@@ -214,11 +214,10 @@
             <span>Diseño e implementación de programas formativos </span>
           </div>
         </div>
-
         <div class="col-6 sub-container">
           <div class="item-container">
             <img src="./img/arrow.png" alt="">
-            <span class="d-block"><strong>Acompañamiento</strong></span>  
+            <span class="d-block" ><strong>Acompañamiento</strong></span>  
             <span>Apoyo y seguimiento pertinente, continuo, cercano y oportuno a 
                   los participantes a lo largo de la implementación del proyecto.
             </span>
@@ -238,7 +237,7 @@
   <!--  -->
 
   <!--  -->
-  <section class="section-padding dip-cert">
+  <section class="section-padding dip-cert" id="Diplomado">
     <div class="container">
       <h1 >Diplomado y certificaciones</h1>
       <!-- owl-carousel features-carousel -->
@@ -317,7 +316,7 @@
   <!--  -->
 
   <!--  -->
-  <section class="section-padding forma-parte">
+  <section class="section-padding forma-parte" id="QuieroSerParte">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12">
@@ -386,7 +385,7 @@
           <p class="letter-white">¿Tienes dudas? Escríbenos: <strong>info@512.com.do</strong</p>
         </div>
         <div class="col-md-12 col-lg-3" style="display: contents;">
-          <ul style="display: flex;">
+          <ul class="social-media-icons">
             <li><a href="#"><i class="letter-white fab fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="letter-white fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="letter-white fab fa-whatsapp"></i></a></li>
