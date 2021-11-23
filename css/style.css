@@ -212,6 +212,10 @@ section.home.d-flex.align-items-center > div > div > div.col-lg-7.col-sm-12 > di
     color: #FAD305;
 }
 
+.info-bg {
+    background-color: #F9F9F9;
+}
+
 .section-padding .info {
     color: var(--main-color);
     letter-spacing: 1px;
