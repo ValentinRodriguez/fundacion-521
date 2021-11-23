@@ -48,18 +48,6 @@ ul{
     color: var(--black-000) !important;
 }
 
-/* .btn-1 {
-    background-color: #ffffff;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 30px;
-    color: var(--main-color);
-    font-size: 16px;
-    text-transform: capitalize;
-    transition: all 0.5s ease;
-    box-shadow: var(--shadow-black-300);
-    font-weight: 500;
-} */
 
 .btn-1:focus{
     box-shadow: var(--shadow-black-300);
@@ -94,6 +82,11 @@ ul{
     transition: all 0.5s ease;
 
 }
+
+.navbar-shrink {
+    background-color: var(--main-color);
+}
+
 .navbar .container #logo {
     width: 20%;
 }
@@ -495,7 +488,6 @@ body > footer > div > div:nth-child(3) > strong > div ul li{
 }
 
 /* RESPONSIVE */
-
 @media(max-width: 1390px) {
     .forma-parte img{
         display: none;
