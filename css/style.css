@@ -361,7 +361,7 @@ section.home.d-flex.align-items-center
   position: absolute;
   right: 39px;
   top: 40%;
-  width: 40px;
+  width: 30px;
   z-index: 10000;
   cursor: pointer;
 }
@@ -434,6 +434,11 @@ section.home.d-flex.align-items-center
   position: relative;
   font-family: "Roboto", sans-serif;
   background-color: var(--main-color);
+}
+
+.card-body-back{
+  background-color: #f9f9f9;
+  color: var(--main-color);
 }
 
 .dip-cert .container .card-body img {
@@ -579,6 +584,11 @@ body > footer > div > div:nth-child(3) > strong > div ul li {
   }
 }
 
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* RESPONSIVE */
 @media (max-width: 1390px) {
   .forma-parte img {
@@ -633,5 +643,10 @@ body > footer > div > div:nth-child(3) > strong > div ul li {
     display: flex;
     width: 100vw;
     justify-content: space-evenly;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
