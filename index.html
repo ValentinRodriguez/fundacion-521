@@ -9,10 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-
 
   <!-- owl carousel css -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -20,6 +18,7 @@
   <link rel="stylesheet" href="css/font-awesome.css">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.5.1.3.css">
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,7 +32,7 @@
       <a class="navbar-brand" href="index.html"><img src="./img/logo.png" id="logo" alt="" srcset=""></a>
 
       <!-- Toggler/collapsibe Button -->
-      <button id="toggle" class="navbar-toggler" type="button">
+      <button id="toggle" class="navbar-toggler" type="button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fas fa-bars fa-icon"></span>
       </button>
 
@@ -129,7 +128,8 @@
   <!-- Objectives section start-->
   <section class="section-padding" id="Objetivos">
     <div class="container">
-      <h2 class="title-objetivos"><strong>Objetivos</strong></h2>
+      <h1 class="titulo">Objetivos</h1>
+      <!-- <h1 class="title-objetivos titulo"><strong>Objetivos</strong></h1> -->
       <div class="row justify-content-center">
         <div class="card-group">
           <div class="card">
@@ -154,7 +154,7 @@
             <div class="card-body">
               <h5 class="card-title"><strong>Acercar la figura</strong></h5>
               <p class="card-text">del Defensor del Pueblo a las comunidades del país, promoviendo su máximo
-                aprovechamiento. .</p>
+                aprovechamiento.</p>
               <p class="card-text"></p>
             </div>
           </div>
@@ -169,7 +169,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 text-impact">
-          <h2><strong>Impacto esperado</strong> </h2>
+          <h2 class="titulo"><strong>Impacto esperado</strong> </h2>
           <p>Buscando formar, transformar y agregar valor a la sociedad dominicana en materia de derechos
             humanos y ciudadanía, surge la alianza estratégica y proyecto de colaboración entre el
             <strong class="letter-white"> Defensor del Pueblo y el Instituto 512</strong>. Involucrando a todos los
@@ -205,12 +205,11 @@
 
   <!--  -->
   <section class="section-padding componentes">
-    <div class="container">
+    <div class="container compo">
       <h1 class="titulo">Componentes del proyecto</h1>
       <div class="row">
         <div class="col-6 sub-container">
           <div class="item-container">
-            <img src="./img/arrow.png" alt="">
             <span class="d-block"><strong>Investigación y Evaluación</strong></span>
             <span>Diagnóstico de línea base, monitoreo de avances y resultados de la implementación,
               documentación de casos de estudio y buenas prácticas.
@@ -218,7 +217,6 @@
           </div>
 
           <div class="item-container">
-            <img src="./img/arrow.png" alt="">
             <span class="d-block"><strong>Recursos de Aprendizaje 360</strong></span>
             <span>Diseño y producción de recursos didácticos (guías y materiales educativos) para integrar
               la educación en derechos humanos y constitución Dominicana en nuestro sistema educativo.
@@ -226,14 +224,12 @@
           </div>
 
           <div class="item-container">
-            <img src="./img/arrow.png" alt="">
             <span class="d-block"><strong>Formación y Desarrollo a la Medida</strong></span>
             <span>Diseño e implementación de programas formativos </span>
           </div>
         </div>
         <div class="col-6 sub-container">
           <div class="item-container">
-            <img src="./img/arrow.png" alt="">
             <span class="d-block"><strong>Acompañamiento</strong></span>
             <span>Apoyo y seguimiento pertinente, continuo, cercano y oportuno a
               los participantes a lo largo de la implementación del proyecto.
@@ -241,7 +237,6 @@
           </div>
 
           <div class="item-container">
-            <img src="./img/arrow.png" alt="">
             <span class="d-block"><strong>Redes y Comunidad</strong></span>
             <span>Producción y difusión de contenido de valor para la informar y formar a la
               Comunidad 512 y la socedad en general en derechos humanos y ciudadanía.
@@ -256,7 +251,7 @@
   <!--  -->
   <section class="section-padding dip-cert" id="Diplomado">
     <div class="container">
-      <h1>Diplomado y certificaciones</h1>
+      <h1 class="titulo">Diplomado y certificaciones</h1>
       <!-- owl-carousel features-carousel -->
 
       <div class="card-container">
@@ -355,54 +350,6 @@
   </section>
   <!--  -->
 
-  <!--  -->
-  <!-- <section class="section-padding dip-cert2" id="Diplomado">
-    <div class="container">
-      <h1 class="text-center">Diplomado y certificaciones</h1>
-      <div class="row ">
-        <div class="col-lg-4 col-md-12">
-          <div class="card" style="width: 100%;padding: 0; margin: 0;">
-            <img class="card-img-top" src="./img/shadow-biblioteca.png" alt="Card image cap">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 text-impact">
-          <h2><strong>Diplomado:</strong> </h2>
-          <h3>Derechos Humanos y Constitución Dominicana </h3>
-          <p>Contribuir a la educación en DDHH en el Sistema Educativo Dominicano,
-            con énfasis en nuestra Constitución y la defensa de los derechos y libertades
-            fundamentales.
-          </p>
-          <a class="botonUnir" target="_blank" href='./files/Certificacion DF y ejercicio ciudadano.pdf' download>Más
-            información</a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!--  -->
-
-  <!--  -->
-  <!-- <section class="section-padding forma-parte" id="QuieroSerParte">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <span>Forma parte de nuestra</span>
-          <span>Comunidad 512 </span>
-        </div>
-
-        <div class="col-lg-6 col-md-12">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Escribe tu correo electrónico...">
-            <div class="input-group-append">
-              <button type="button" class="btn btn-outline-secondary">Quiero ser parte</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./img/mini-rectangle.png" alt="" srcset="">
-  </section> -->
-  <!--  -->
-
   <footer class="section-padding footer impact-bg letter-white">
     <div class="container">
       <div class="row">
@@ -470,6 +417,7 @@
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.5.1.3.js"></script>
   <!-- owl carousel js -->
   <script src="js/owl.carousel.min.js"></script>
   <!-- ScrollIt js -->

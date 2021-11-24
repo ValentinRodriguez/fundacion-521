@@ -62,14 +62,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-document.getElementById("toggle").addEventListener("click", function () {
-
-    var x = document.getElementById("collapsibleNavbar");
-    if (x.className === "collapse navbar-collapse") {   
-        x.classList.add("show");
-    } else {
-        x.classList.remove("show");
-    }
-});
-
