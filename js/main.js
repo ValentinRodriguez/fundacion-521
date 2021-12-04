@@ -3,10 +3,12 @@ $(document).ready(function () {
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 90) {
             $(".navbar").addClass("navbar-shrink");
+            $(".navbar").addClass("fixed-top");
             $(".nav-link").addClass("letter-white");
             $(".navbar .nav-item i").addClass("letter-white");
         } else {
             $(".navbar").removeClass("navbar-shrink");
+            $(".navbar").removeClass("fixed-top");
             $(".nav-link").removeClass("letter-white");
             $(".navbar .nav-item i").removeClass("letter-white");
         }
