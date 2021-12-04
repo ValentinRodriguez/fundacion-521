@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    
+    // insert current year footer
+    var currentYear= new Date().getFullYear();  
+    $("#year-now").append( currentYear );
+    
     // SCROLL
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 90) {

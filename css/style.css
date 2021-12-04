@@ -42,6 +42,10 @@ ul {
   list-style: none;
 }
 
+a{
+  list-style: none;
+}
+
 /*------------------------ 
     navbar
 ------------------------*/
@@ -103,7 +107,7 @@ ul {
   background-color: var(--main-color);
   color: white;
   border-radius: 5px;
-  width: 10rem;
+  width: 11rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -639,10 +643,14 @@ body
   font-weight: bold;
 }
 
-footer > div > div:nth-child(1) > div.col-lg-5 > img:nth-child(1) {
+footer .footer-image {
   position: absolute;
   top: -5%;
-  width: 57%;
+  width: 90%;
+}
+
+footer .footer-col {
+  font-family: "Roboto", sans-serif;
 }
 
 footer > div > div:nth-child(1) > div.col-lg-5 > img:nth-child(2) {
@@ -731,7 +739,7 @@ body > footer > div > div:nth-child(3) > strong > div ul li {
   }
 
   .dip-cert .container .card-body img,
-  .footer .container .footer-image,
+  .footer .container .footer-image-container,
   .forma-parte img,
   .dip-cert .container .dip-cert-visible,
   .cont-img-principal,
